@@ -10,7 +10,8 @@
     "rest": "^2.0.0"
   },
   "scripts": {
-    "watch": "webpack --watch -d --output ./target/classes/static/built/bundle.js"
+    "watch": "webpack --watch -d --output ./target/classes/static/built/bundle.js",
+    "build": "webpack -d --output ./target/classes/static/built/bundle.js"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
