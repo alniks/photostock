@@ -1,0 +1,16 @@
+app:
+    datasource:
+        url: jdbc:postgresql://192.168.0.101:5432/photostock
+        jdbc-url: jdbc:postgresql://192.168.0.101:5432/photostock
+        username: redmine
+        password: password
+        driver: org.postgresql.Driver
+        configuration:
+            pool-size: 30
+spring:
+    datasource:
+        jdbc-url: jdbc:postgresql://192.168.0.101:5432/photostock_test
+        url: jdbc:postgresql://192.168.0.101:5432/photostock_test
+        username: redmine
+        password: password
+        driver: org.postgresql.Driver
