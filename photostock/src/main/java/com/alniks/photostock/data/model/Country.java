@@ -8,8 +8,17 @@ import java.util.Objects;
  */
 public class Country {
     
+    public final static String COUNTRY_TBL = "countries";
+    
     private Long id;
     private String name;
+
+    public Country() {
+    }
+
+    public Country(String name) {
+        this.name = name;
+    }
 
     public Long getId() {
         return id;
