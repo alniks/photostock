@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {BsFillTrashFill, BsFillPencilFill} from "react-icons/bs";
-import Modal from "./Modal";
+import Modal_CameraTypes from "./Modal_CameraTypes";
 
 const CameraTypes = () => {
     
@@ -39,7 +39,7 @@ const CameraTypes = () => {
     <button className="btn" onClick={()=> setModalOpen(true)}>Add</button>
     
     
-            {modalOpen && <Modal closeModal={()=>{setModalOpen(false); setRowToEdit(null);}}  onSubmit={handleSubmit} defaultValue={rowToEdit !== null && rows[rowToEdit]}/>}
+            {modalOpen && <Modal_CameraTypes closeModal={()=>{setModalOpen(false); setRowToEdit(null);}}  onSubmit={handleSubmit} defaultValue={rowToEdit !== null && rows[rowToEdit]}/>}
             <div className="table-wrapper">
             <table className="table">
                 <thead>
