@@ -5,8 +5,8 @@ const InputForm = (props) => {
     
     return (
             <div className="formInput">
-                <label>{label}</label>
-                <input {...inputProps} onChange={onChange}/>
+                <label className="label">{label}</label>
+                <input {...inputProps} onChange={onChange} className="input"/>
                 
             </div>
             );

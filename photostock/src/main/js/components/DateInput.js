@@ -30,8 +30,8 @@ const DateInput = () => {
             <div className="date">
             <form onSubmit={handleAdd}>
                     <h1>Welcome to React</h1>
-                    <label>Date</label>
-                <input type="date" onChange={onChange}/>
+                    <label className="dateLabel">Date</label>
+                <input type="date" onChange={onChange} className="dateInput"/>
                                             
                 <button>Add</button>
                 </form>

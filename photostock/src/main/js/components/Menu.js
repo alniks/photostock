@@ -3,6 +3,8 @@ import DateInput from "./DateInput";
 import Countries from "./Countries";
 
 import CameraTypes from "./CameraTypes";
+import CameraProducers from "./CameraProducers";
+import Lenses from "./Lenses";
 import {
   BrowserRouter as Router,
   Route,
@@ -22,6 +24,8 @@ const Menu = () => {
                 <a><Link to="./DateInput">Date</Link></a>
                 <a><Link to="./Countries">Countries</Link></a>
                 <a><Link to="./CameraTypes">Camera types</Link></a>
+                <a><Link to="./CameraProducers">Camera producers</Link></a>
+                <a><Link to="./Lenses">Lenses</Link></a>
             
                 
             
@@ -31,6 +35,8 @@ const Menu = () => {
                     <Route exact path="/DateInput" element={<DateInput/>}/>
                     <Route exact path="/Countries" element={<Countries/>}/>
                     <Route exact path="/CameraTypes" element={<CameraTypes/>}/>
+                    <Route exact path="/CameraProducers" element={<CameraProducers/>}/>
+                    <Route exact path="/Lenses" element={<Lenses/>}/>
                 </Routes>
                
                 
