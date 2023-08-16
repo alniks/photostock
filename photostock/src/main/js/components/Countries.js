@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {BsFillTrashFill, BsFillPencilFill} from "react-icons/bs";
 import Modal from "./Modal";
 
@@ -23,6 +23,13 @@ const Countries = () => {
     };
     
     const handleSubmit = (newRow) => {
+        console.log(newRow);
+        fetch('/admin/countries', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({name: newRow.countries})
+                })
+                .then((response) => console.log(response));
         rowToEdit === null ?
         setRows([...rows, newRow]):
                 setRows(rows.map((currRow, idx) => {
@@ -30,6 +37,22 @@ const Countries = () => {
                     return newRow;
                 }));
     };
+    
+    const fetchData = () => {
+        fetch('/admin/countries')
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+    
+    useEffect(() => {
+        fetchData();
+    }, []);
+    
     return (
             <div>
     
