@@ -1,11 +1,10 @@
 
-
-.date{
+.app{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50vh;
-    width: 280px;
+    background-color: lightskyblue;
     
 }
 form{
@@ -32,16 +31,3 @@ button{
     margin-top: 15px;
     margin-bottom: 30px; 
 }
-
-.dateInput {
-    padding:  15px;
-    margin: 10px 0px;
-    border-radius: 5px;
-    border: 1px solid gray;
-}
-.dateLabel{
-    font-size: 18px;
-    color: gray;
-    
-}
-
