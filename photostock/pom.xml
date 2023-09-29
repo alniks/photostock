@@ -59,6 +59,16 @@
                             <nodeVersion>v15.10.0</nodeVersion>
                         </configuration>
                     </plugin>
+                    <plugin>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-maven-plugin</artifactId>
+                        <configuration>
+                            <docker>
+                                <host>tcp://192.168.0.101:2376</host>
+                                <tlsVerify>true</tlsVerify>
+                            </docker>
+                        </configuration>
+                    </plugin>
                 </plugins>
             </build>
         </profile>
